@@ -173,6 +173,11 @@ RR interpolado para análisis de frecuencia
 
 <img width="1919" height="1018" alt="image" src="https://github.com/user-attachments/assets/e427a328-be0f-4d40-b088-8b9321215251" />
 
+* En la primera grafica vemos co,o se ve nuestra señal ECG original, a penas obtenida del sensor donde vemos un ritmo cardiaco normal y con la cual empezaremos a hacer el analisis siguientes.
+* Para la segunda grafica teemos La deteccion de los picos R de la señal filtrada donde se calcula los intervalos de RR que nos muestra el tiempo entre dos latidos consecutivos, y con esta grafica podemos obtener tambien el analisis de la variabilidad del ritmo cardiaco.
+* Seguimos con la serie de intervalos de RR enfrentando la parte original (linea verde ) con la interpolada (linea roja), en donde vemos que a los valores altos corresponden los latidos mas separados que nos dice que hay una frecuencia cardiaca baja y a los valores bajos son los latidos mas cercanos que nos muestran una frecuencia cardiaca alta, esto nos muestra cómo varía el ritmo cardíaco a lo largo del tiempo y la interpolación nos sirve para preparar los datos para el análisis espectral.
+* Espectograma wavelet de (RR interpolado) este nos muestra mediante una colorimetria la potencia de la señal en cada instante y frecuencia, donde las zonas rojas y amarillas nos muestran que hay mas potencia y una mayor influencia de frecuencia en ese instante, donde vemos que las frecuencias bajas se asocian con la actividad simpática y parasimpática del sistema nervioso, y las frecuencias altas están relacionadas con la respiración y el control parasimpático, concuyendo en que el espectro nos permite visualizar cómo las componentes de baja y alta frecuencia del ritmo cardíaco varían con el tiempo, mostrando la dinámica del sistema nervioso autónomo.
+
 4. Análisis de la Variabilidad de la Frecuencia Cardíaca (HRV)
 
 A partir de la detección de los picos R en la señal ECG filtrada, se calcularon los intervalos R–R (RR), los cuales representan el tiempo entre latidos consecutivos.
